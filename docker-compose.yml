@@ -1,0 +1,12 @@
+version: '3'
+services:
+  zipkin:
+    image: openzipkin/zipkin 
+    ports:
+        - "9411:9411"
+  pci:
+    image: sleuth/pci 
+  non-pci:
+    image: sleuth/non-pci 
+    ports:
+        - "8080:8080"

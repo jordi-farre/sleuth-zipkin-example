@@ -18,7 +18,7 @@ public class Application {
     @Autowired
     private RestTemplate restTemplate;
 
-    @RequestMapping("/")
+    @RequestMapping("/test")
     public String home() {
         String response = this.restTemplate.postForObject("https://httpbin.org/post", "testing", String.class);
         log.info(response);
