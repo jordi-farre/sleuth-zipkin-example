@@ -9,7 +9,7 @@ services:
     logging:
       driver: gelf
       options:
-        gelf-address: "udp://127.0.0.1:5000"
+        gelf-address: "udp://127.0.0.1:12201"
         tag: "pci"
   non-pci:
     image: sleuth/non-pci 
@@ -18,5 +18,5 @@ services:
     logging:
       driver: gelf
       options:
-        gelf-address: "udp://127.0.0.1:5000"
+        gelf-address: "udp://127.0.0.1:12201"
         tag: "non-pci"

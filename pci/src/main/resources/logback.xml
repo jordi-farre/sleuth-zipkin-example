@@ -6,6 +6,7 @@
 
     <appender name="genericAppender" class="ch.qos.logback.core.ConsoleAppender">
         <encoder class="net.logstash.logback.encoder.LoggingEventCompositeJsonEncoder">
+            <encoding>UTF-8</encoding>
             <providers>
                 <timestamp/>
                 <pattern>
